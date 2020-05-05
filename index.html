@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Music Gallery</title>
     <meta name="description" content="Music Gallery">
-    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-teleport-controls@0.1.0/dist/aframe-teleport-controls.min.js"></script>
   </head>
   <body>
@@ -15,7 +15,6 @@
         <img src="assets/wall.jpg" id="wall">
         <img src="assets/ceiling.jpg" id="ceiling">
 
-        <!-- https://squadcards.wordpress.com/ -->
         <img src="assets/bruno_cartoon.jpeg" id="bruno">
         <img src="assets/bruno2.jpeg" id="bruno2">
         <img src="assets/bruno3.jpg" id="bruno3">
@@ -25,21 +24,20 @@
         <img src="assets/mayer.jpg" id="mayer">
         <img src="assets/mayer2.jpg" id="mayer2">
         <img src="assets/mayer3.jpg" id="mayer3">
-
       </a-assets>
 
-      <a-entity id="left-hand"
-  brush
-  paint-controls="hand: left"
-  ui
-  teleport-controls>
-</a-entity>
-<a-entity id="right-hand"
-  brush
-  paint-controls="hand: right"
-  ui
-  teleport-controls>
-</a-entity>
+      <!-- <a-entity id="left-hand"
+        brush
+        paint-controls="hand: left"
+        ui
+        teleport-controls>
+      </a-entity>
+      <a-entity id="right-hand"
+        brush
+        paint-controls="hand: right"
+        ui
+        teleport-controls>
+      </a-entity> -->
 
       <!-- Floor -->
       <a-box depth="40" height="0.1" width="40" position="0 0 0" rotation="0 90 0" material="src: #floor; repeat: 8 8"></a-box>
