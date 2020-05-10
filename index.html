@@ -18,7 +18,9 @@
         <img id="background" src="assets/elvis.jpeg">
         <img id="pic1" src="assets/elvis.jpeg">
         <img id="pic2" src="assets/elvis.jpeg">
-        <img id="pics" src="assets/elvis.jpeg">
+        <img id="pic3" src="assets/elvis.jpeg">
+        <img id="pic4" src="assets/elvis.jpeg">
+        <img id="pic5" src="assets/elvis.jpeg">
 
         <a-asset-item id="road-gltf" src="models/model.gltf"></a-asset-item>
         <audio
@@ -34,15 +36,31 @@
           src="music/sinatra_sample2.wav"
         ></audio>
 
-        <img src="assets/bruno_cartoon.jpeg" id="bruno">
         <img src="assets/Bruno_cover.jpeg" id="brunocover">
+        <img src="assets/bruno_cartoon.jpeg" id="bruno">
         <img src="assets/bruno2.jpeg" id="bruno2">
         <img src="assets/bruno3.jpg" id="bruno3">
+        <img src="assets/bruno3.jpeg" id="bruno4">
+        <img src="assets/bruno3.jpeg" id="bruno5">        
+
         <img src="assets/elvis_cover.jpeg" id="elviscover">
         <img src="assets/elvis.jpeg" id="elvis">
+        <img src="assets/elvis2.jpeg" id="elvis2">
+        <img src="assets/elvis3.jpeg" id="elvis3">
+        <img src="assets/elvis4.jpeg" id="elvis4">
+        <img src="assets/elvis5.jpg" id="elvis5">
+
+        <img src="assets/sinatra_cover.jpeg" id="sinatracover">
+        <img src="assets/sinatra.jpeg" id="sinatra">
+        <img src="assets/sinatra2.jpeg" id="sinatra2">
+        <img src="assets/sinatra3.jpeg" id="sinatra3">
+        <img src="assets/sinatra4.jpeg" id="sinatra4">
+        <img src="assets/sinatra5.jpeg" id="sinatra5">
+        
         <img src="assets/queen.jpg" id="queen">
         <img src="assets/queen2.jpg" id="queen2">
         <img src="assets/queen3.jpg" id="queen3">
+
         <img src="assets/mayer.jpg" id="mayer">
         <img src="assets/mayer2.jpg" id="mayer2">
         <img src="assets/mayer3.jpg" id="mayer3">
@@ -54,35 +72,55 @@
       <!-- moving artist picture animations -->
       <a-image id="p1" src="#pic1" width="3" height="3" scale="2 2 1" visible=false 
         animation="property: position;
-        from: -6 5 -20;
+        from: -6 5 -30;
         to: -6 5 20;
-        dur: 7000;
-        delay: 400;
-        easing: linear;
-        autoplay: true;
-        loop: false;">
-      </a-image>
-      <a-image id="p2" src="#pic2" width="3" height="3" scale="2 2 1" visible=false 
-        animation="property: position;
-        from: 6 5 -25;
-        to: 6 5 20;
         dur: 10000;
-        delay: 600;
+        delay: 500;
         easing: linear;
         autoplay: true;
         loop: true;">
       </a-image>
-      <a-image id="p3" src="#pic1" width="3" height="3" scale="2 2 1" visible=false 
+      <a-image id="p2" src="#pic2" width="3" height="3" scale="2 2 1" visible=false 
+        animation="property: position;
+        from: 6 5 -30;
+        to: 6 5 20;
+        dur: 8000;
+        delay: 700;
+        easing: linear;
+        autoplay: true;
+        loop: true;">
+      </a-image>
+      <a-image id="p3" src="#pic3" width="3" height="3" scale="2 2 1" visible=false 
         animation="property: position;
         from: -6 5 -30;
         to: -6 5 20;
-        dur: 20000;
-        delay: 800;
+        dur: 10000;
+        delay: 900;
         easing: linear;
         autoplay: true;
-        loop: false;">
+        loop: true;">
       </a-image>
-      
+      <a-image id="p4" src="#pic4" width="2" height="2" scale="2 2 1" visible=false 
+        animation="property: position;
+        from: 8 5 -30;
+        to: 8 5 20;
+        dur: 8000;
+        delay: 1000;
+        easing: linear;
+        autoplay: true;
+        loop: true;">
+      </a-image>
+      <a-image id="p5" src="#pic5" width="2" height="2" scale="2 2 1" visible=false 
+        animation="property: position;
+        from: -8 5 -30;
+        to: -8 5 20;
+        dur: 10000;
+        delay: 1200;
+        easing: linear;
+        autoplay: true;
+        loop: true;">
+      </a-image>
+        
 
       <!-- keyboard model animation -->
       <a-entity id="model" visible=false
@@ -115,8 +153,8 @@
       <a-plane id="menu0" color="teal" width="4" height="2.3"
         visible=false position="0 3 -3" >
 
-        <a-plane id="song0" color="teal" width="3.9" height="0.7"
-        position="0 0.75 0.01" song-interact="track: #elvis; track1: #elvis; track2: #elvis; #track3: #elvis; tracksound: #elvis-sound"  >
+        <a-plane id="song0" color="teal" width="3.9" height="0.7" position="0 0.75 0.01" 
+        song-interact="track: #elviscover; track1: #elvis; track2: #elvis2; #track3: #elvis3; track4: #elvis4; #track5: #elvis5; tracksound: #elvis-sound"  >
           <a-image src="#elviscover" scale="0.6 0.6 0.6" position="-1.5 0 0.01"></a-image>
           
           <a-entity position= "1.5 0.1 0" 
@@ -126,9 +164,9 @@
 
         </a-plane>
 
-        <a-plane id="song1" color="teal" width="3.9" height="0.7"
-        position="0 0.0 0.01" song-interact="track: #queen; track1: #queen; track2: #queen2; track3: #queen3; tracksound: #sinatra-sound"  >
-          <a-image src="#queen" scale="0.6 0.6 0.6" position="-1.5 0 0.01"></a-image>
+        <a-plane id="song1" color="teal" width="3.9" height="0.7" position="0 0.0 0.01" 
+        song-interact="track: #sinatracover; track1: #sinatra; track2: #sinatra2; track3: #sinatra3; track4: #sinatra4; track5: #sinatra5; tracksound: #sinatra-sound"  >
+          <a-image src="#sinatracover" scale="0.6 0.6 0.6" position="-1.5 0 0.01"></a-image>
           
           <a-entity position= "1.5 0.1 0" 
           text="value: This is America; width: 5"></a-entity>
@@ -137,9 +175,8 @@
 
         </a-plane>
 
-        <a-plane id="song2" color="teal" width="3.9" height="0.7"
-        position="0 -0.75 0.01" song-interact="track: #bruno; track1: #bruno; track2: #bruno2; track3: #bruno3; tracksound: #elvis-sound" >
-
+        <a-plane id="song2" color="teal" width="3.9" height="0.7" position="0 -0.75 0.01" 
+        song-interact="track: #brunocover; track1: #bruno; track2: #bruno2; track3: #bruno3; track4: #bruno4; track5: #bruno5; tracksound: #elvis-sound" >
           <a-image src="#brunocover" scale="0.6 0.6 0.6" position="-1.5 0 0.01"></a-image>
         
           <a-entity position= "1.5 0.1 0" 

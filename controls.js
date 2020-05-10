@@ -52,11 +52,14 @@ AFRAME.registerComponent("start-interact", {
 
         sceneEl.querySelector("#p1").setAttribute("src", data.track1);   
         sceneEl.querySelector("#p1").object3D.visible = "true";  
-        // sceneEl.querySelector("#p1").setAttribute("animation.autoplay", true)
         sceneEl.querySelector("#p2").setAttribute("src", data.track2);   
         sceneEl.querySelector("#p2").object3D.visible = "true";
         sceneEl.querySelector("#p3").setAttribute("src", data.track3);   
-        sceneEl.querySelector("#p3").object3D.visible = "true";
+        sceneEl.querySelector("#p3").object3D.visible = "true";  
+        sceneEl.querySelector("#p4").setAttribute("src", data.track4);   
+        sceneEl.querySelector("#p4").object3D.visible = "true";
+        sceneEl.querySelector("#p5").setAttribute("src", data.track5);   
+        sceneEl.querySelector("#p5").object3D.visible = "true";        
 
         sceneEl.querySelector("#model").object3D.visible = "true";
 
