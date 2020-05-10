@@ -58,7 +58,7 @@ AFRAME.registerComponent("start-interact", {
         entityS.components.sound.playSound();
 
         console.log(data.tracksound);
-        console.log(entityS.sound);
+        console.log(entityS.sound.components);
       });
     }
   });
