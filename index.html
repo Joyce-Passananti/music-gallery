@@ -17,7 +17,7 @@
         
       <a-assets>
         <img id="sun" src="images/sun.png">
-        <a-asset-item id="road-gltf" src="models/synth_road/synth_road.gltf"></a-asset-item>
+        <a-asset-item id="road-gltf" src="models/synth_road/model.gltf"></a-asset-item>
         <audio
           id="hover-sound"
           src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"
@@ -57,7 +57,7 @@
         <a-entity id="road" gltf-model="#road-gltf" scale="0.7 0.7 0.7" position="0 0 -30"></a-entity>
       </a-entity>
 
-      <a-image id="bg" src="#sun" width="3" height="3" position="0 10 -30" scale="10 10 1" visible=false ></a-image>
+      <a-image id="bg" src="#sun" width="3" height="3" position="0 10 -30" scale="5 5 1" visible=false ></a-image>
 
       <a-sound id="play" src="#hover-sound"></a-sound>
 
