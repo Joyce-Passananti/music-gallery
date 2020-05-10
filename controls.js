@@ -52,9 +52,12 @@ AFRAME.registerComponent("start-interact", {
 
         sceneEl.querySelector("#bg").object3D.visible = "true";
         sceneEl.querySelector("#bg").setAttribute("src", data.track);     
-        sceneEl.querySelector("#bg").setAttribute("sound", data.track);   
-        sceneEl.querySelector("bg").components.sound.playsound();
+        // sceneEl.querySelector("#bg").setAttribute("sound", data.track);   
+        // sceneEl.querySelector("bg").components.sound.playsound();
         sceneEl.querySelector("#model").object3D.visible = "true";
+        var entityS = document.querySelector('[sound]');
+        entityS.setAttribute("sound", "src: " + data.track);
+        entityS.components.sound.playSound();
 
         console.log(data.track);
       });
