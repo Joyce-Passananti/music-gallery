@@ -23,9 +23,9 @@
           src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"
         ></audio>
         <audio
-        id="elvis-sound"
-        src="assets/elvis_sample0.wav"
-      ></audio>
+          id="elvis-sound"
+          src="assets/elvis_sample0.wav"
+        ></audio>
 
         <img src="assets/bruno_cartoon.jpeg" id="bruno">
         <img src="assets/Bruno_cover.jpeg" id="brunocover">
@@ -87,7 +87,7 @@
         </a-plane>
 
         <a-plane id="song1" color="teal" width="3.9" height="0.7"
-        position="0 0.0 0.01" song-interact="track: sinatra" sound="" >
+        position="0 0.0 0.01" song-interact="track: sinatra" sound="on: mouseenter; src: #hover-sound" >
           <a-image src="#mayer" scale="0.6 0.6 0.6" position="-1.5 0 0.01"></a-image>
           
           <a-entity position= "1.5 0.1 0" 
@@ -98,7 +98,7 @@
         </a-plane>
 
         <a-plane id="song2" color="teal" width="3.9" height="0.7"
-        position="0 -0.75 0.01" song-interact="track: #bruno" sound="" >
+        position="0 -0.75 0.01" song-interact="track: #bruno" sound="on: click; src: #hover-sound" >
 
           <a-image src="#brunocover" scale="0.6 0.6 0.6" position="-1.5 0 0.01"></a-image>
         
