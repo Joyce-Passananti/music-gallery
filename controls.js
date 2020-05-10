@@ -52,7 +52,8 @@ AFRAME.registerComponent("start-interact", {
 
         sceneEl.querySelector("#bg").object3D.visible = "true";
         sceneEl.querySelector("#bg").setAttribute("src", data.track);     
-        sceneEl.querySelector("#bg").setAttribute("sound", data.track);    
+        sceneEl.querySelector("#bg").setAttribute("sound", data.track);   
+        sceneEl.querySelector("bg").components.sound.playsound();
         sceneEl.querySelector("#model").object3D.visible = "true";
 
         console.log(data.track);
