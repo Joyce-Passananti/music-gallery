@@ -48,7 +48,7 @@ AFRAME.registerComponent("start-interact", {
         // FROM HERE
 
         sceneEl.querySelector("#bg").object3D.visible = "true";
-        sceneEl.querySelector("#bg").setAttribute("src", "#queen");        
+        sceneEl.querySelector("#bg").setAttribute("src", data.track);        
         sceneEl.querySelector("#model").object3D.visible = "true";
 
         console.log(data.track);
