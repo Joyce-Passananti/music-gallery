@@ -47,18 +47,15 @@ AFRAME.registerComponent("start-interact", {
         // This is your EVENT LISTENER YOU CAN DECIDE TO START THE WAV FILES
         // FROM HERE
 
-        sceneEl.querySelector("#bg").object3D.visible = "true";
-        sceneEl.querySelector("#bg").setAttribute("src", data.track);     
-        // sceneEl.querySelector("#bg").setAttribute("sound", data.track);   
-        // sceneEl.querySelector("bg").components.sound.playsound();
+        sceneEl.querySelector("#bg").setAttribute("src", data.track);   
+        sceneEl.querySelector("#bg").object3D.visible = "true";  
         sceneEl.querySelector("#model").object3D.visible = "true";
         var entityS = document.querySelector('[sound]');
         entityS.setAttribute("src", data.tracksound);
-        // entityS.components.sound.setAttribute("src", data.tracksound);
-        entityS.components.sound.playSound();
+        entityS.playSound();
 
         console.log(data.tracksound);
-        console.log(entityS.sound.components);
+        console.log(entityS.data);
       });
     }
   });
