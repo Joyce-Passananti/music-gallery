@@ -12,7 +12,7 @@
   <body>
 
     <a-scene>
-      <a-sky src="assets/music_sky.jpg"></a-sky>
+      <a-sky src="assets/music_sky3.jpg"></a-sky>
         
       <a-assets>
         <img id="background" src="assets/elvis.jpeg">
@@ -56,14 +56,33 @@
         animation="property: position;
         from: -6 5 -20;
         to: -6 5 20;
-        dur: 5000;
+        dur: 7000;
         delay: 100;
         easing: linear;
-        autoplay: false;
+        autoplay: true;
         loop: false;">
       </a-image>
-      <!-- <a-image id="p2" src="#pic2" width="3" height="3" position="4 5 -30" scale="2 2 1" visible=false ></a-image> -->
-      <!-- <a-image id="p3" src="#pic3" width="3" height="3" position="0 10 -30" scale="2 2 1" visible=false ></a-image> -->
+      <a-image id="p2" src="#pic2" width="3" height="3" scale="2 2 1" visible=false 
+        animation="property: position;
+        from: 6 5 -50;
+        to: 6 5 20;
+        dur: 10000;
+        delay: 200;
+        easing: linear;
+        autoplay: true;
+        loop: false;">
+      </a-image>
+      <a-image id="p2" src="#pic1" width="3" height="3" scale="2 2 1" visible=false 
+        animation="property: position;
+        from: -6 5 -100;
+        to: -6 5 20;
+        dur: 20000;
+        delay: 300;
+        easing: linear;
+        autoplay: true;
+        loop: false;">
+      </a-image>
+      
 
       <!-- keyboard model animation -->
       <a-entity id="model" visible=false
@@ -97,7 +116,7 @@
         visible=false position="0 3 -3" >
 
         <a-plane id="song0" color="teal" width="3.9" height="0.7"
-        position="0 0.75 0.01" song-interact="track: #elvis; tracksound: #elvis-sound"  >
+        position="0 0.75 0.01" song-interact="track: #elvis; track1: #elvis; track2: #elvis; #track3: elvis; tracksound: #elvis-sound"  >
           <a-image src="#elviscover" scale="0.6 0.6 0.6" position="-1.5 0 0.01"></a-image>
           
           <a-entity position= "1.5 0.1 0" 
@@ -108,8 +127,8 @@
         </a-plane>
 
         <a-plane id="song1" color="teal" width="3.9" height="0.7"
-        position="0 0.0 0.01" song-interact="track: #mayer; tracksound: #sinatra-sound"  >
-          <a-image src="#mayer" scale="0.6 0.6 0.6" position="-1.5 0 0.01"></a-image>
+        position="0 0.0 0.01" song-interact="track: #queen; track1: #queen; track2: #queen2; track3: #queen3; tracksound: #sinatra-sound"  >
+          <a-image src="#queen" scale="0.6 0.6 0.6" position="-1.5 0 0.01"></a-image>
           
           <a-entity position= "1.5 0.1 0" 
           text="value: This is America; width: 5"></a-entity>
@@ -119,7 +138,7 @@
         </a-plane>
 
         <a-plane id="song2" color="teal" width="3.9" height="0.7"
-        position="0 -0.75 0.01" song-interact="track: #bruno; tracksound: #elvis-sound" >
+        position="0 -0.75 0.01" song-interact="track: #bruno; track1: #bruno; track2: #bruno2; track3: #bruno3; tracksound: #elvis-sound" >
 
           <a-image src="#brunocover" scale="0.6 0.6 0.6" position="-1.5 0 0.01"></a-image>
         
