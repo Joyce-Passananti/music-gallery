@@ -38,9 +38,6 @@ AFRAME.registerComponent("start-interact", {
   
       songEl.addEventListener("click", function () {
         var sceneEl = document.querySelector("a-scene");
-        // sceneEl.querySelector("#menu0").object3D.visible = "false";
-        // sceneEl.querySelector("#menu1").object3D.visible = "false";
-        // sceneEl.querySelector("#menu2").object3D.visible = "false";
         var entityEl = sceneEl.querySelector("#menu0");
         sceneEl.removeChild(entityEl);
         var entityEl = sceneEl.querySelector("#menu1");
@@ -56,10 +53,10 @@ AFRAME.registerComponent("start-interact", {
         // sceneEl.querySelector("bg").components.sound.playsound();
         sceneEl.querySelector("#model").object3D.visible = "true";
         var entityS = document.querySelector('[sound]');
-        entityS.components.sound.setAttribute("src", data.tracksound);
+        // entityS.components.sound.setAttribute("src", data.tracksound);
         entityS.components.sound.playSound();
 
-        console.log(data.track);
+        console.log(data.tracksound);
       });
     }
   });
