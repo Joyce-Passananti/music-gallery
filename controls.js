@@ -52,7 +52,7 @@ AFRAME.registerComponent("start-interact", {
 
         sceneEl.querySelector("#p1").setAttribute("src", data.track);   
         sceneEl.querySelector("#p1").object3D.visible = "true";  
-        // sceneEl.querySelector("#p1").setAttribute("")
+        sceneEl.querySelector("#p1").setAttribute("animation.autoplay", true)
 
         sceneEl.querySelector("#model").object3D.visible = "true";
 
