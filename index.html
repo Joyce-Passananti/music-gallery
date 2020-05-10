@@ -52,12 +52,14 @@
       <a-image id="bg" src="#background" width="3" height="3" position="0 10 -30" scale="5 5 1" visible=false ></a-image>
 
       <!-- moving artist picture animations -->
-      <a-image id="p1" src="#pic1" width="3" height="3" position="-6 5 -20" scale="2 2 1" visible=false 
+      <a-image id="p1" src="#pic1" width="3" height="3" scale="2 2 1" visible=false 
         animation="property: position;
+        from: -6 5 -20;
         to: -6 5 20;
         dur: 5000;
+        delay: 100;
         easing: linear;
-        autoplay = true;
+        autoplay: true;
         loop: true;">
       </a-image>
       <!-- <a-image id="p2" src="#pic2" width="3" height="3" position="4 5 -30" scale="2 2 1" visible=false ></a-image> -->
