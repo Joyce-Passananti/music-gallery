@@ -38,20 +38,21 @@ AFRAME.registerComponent("start-interact", {
   
       songEl.addEventListener("click", function () {
         var sceneEl = document.querySelector("a-scene");
-        sceneEl.querySelector("#menu0").object3D.visible = "false";
-        sceneEl.querySelector("#menu1").object3D.visible = "false";
-        sceneEl.querySelector("#menu2").object3D.visible = "false";
-        // var entityEl = sceneEl.querySelector("#menu0");
-        // sceneEl.removeChild(entityEl);
-        // var entityEl = sceneEl.querySelector("#menu1");
-        // sceneEl.removeChild(entityEl);
-        // var entityEl = sceneEl.querySelector("#menu2");
-        // sceneEl.removeChild(entityEl);
+        // sceneEl.querySelector("#menu0").object3D.visible = "false";
+        // sceneEl.querySelector("#menu1").object3D.visible = "false";
+        // sceneEl.querySelector("#menu2").object3D.visible = "false";
+        var entityEl = sceneEl.querySelector("#menu0");
+        sceneEl.removeChild(entityEl);
+        var entityEl = sceneEl.querySelector("#menu1");
+        sceneEl.removeChild(entityEl);
+        var entityEl = sceneEl.querySelector("#menu2");
+        sceneEl.removeChild(entityEl);
         // This is your EVENT LISTENER YOU CAN DECIDE TO START THE WAV FILES
         // FROM HERE
 
         sceneEl.querySelector("#bg").object3D.visible = "true";
-        sceneEl.querySelector("#bg").setAttribute("src", data.track);        
+        sceneEl.querySelector("#bg").setAttribute("src", data.track);     
+        sceneEl.querySelector("#bg").setAttribute("sound", data.track);    
         sceneEl.querySelector("#model").object3D.visible = "true";
 
         console.log(data.track);
