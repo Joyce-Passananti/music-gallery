@@ -33,7 +33,7 @@ AFRAME.registerComponent("start-interact", {
       });
   
       songEl.addEventListener("mouseleave", function () {
-        songEl.setAttribute("color", "#212121");
+        songEl.setAttribute("color", "#blue");
       });
   
       songEl.addEventListener("click", function () {
