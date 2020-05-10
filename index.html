@@ -40,7 +40,7 @@
       
       <!-- <a-camera id="view" position="0 0.3 -1"></a-camera> -->
 
-      <a-entity
+      <a-entity id="model" visible=false
         animation="property: position;
         to: 0 0 20;
         dur: 10000;
@@ -50,7 +50,9 @@
         <a-entity id="road" gltf-model="#road-gltf" scale="0.7 0.7 0.7" position="0 0 -20"></a-entity>
         <a-entity id="road" gltf-model="#road-gltf" scale="0.7 0.7 0.7" position="0 0 -30"></a-entity>
       </a-entity>
-      <a-image src="#sun" width="3" height="3" position="0 10 -30" scale="15 15 1"></a-image>
+
+      <a-image id="bg" src="#sun" width="3" height="3" position="0 10 -30" scale="15 15 1" visible=false ></a-image>
+      
       <audio controls autoplay>
         <source src="music/synth_wave.mp3" type="audio/mpeg">
       </audio>

@@ -33,7 +33,7 @@ AFRAME.registerComponent("start-interact", {
       });
   
       songEl.addEventListener("mouseleave", function () {
-        songEl.setAttribute("color", "#blue");
+        songEl.setAttribute("color", "teal");
       });
   
       songEl.addEventListener("click", function () {
@@ -46,6 +46,10 @@ AFRAME.registerComponent("start-interact", {
         sceneEl.removeChild(entityEl);
         // This is your EVENT LISTENER YOU CAN DECIDE TO START THE WAV FILES
         // FROM HERE
+
+        sceneEl.querySelector("#bg").object3D.visible = "true";
+        sceneEl.querySelector("#model").object3D.visible = "true";
+
         console.log(data.track);
       });
     }
