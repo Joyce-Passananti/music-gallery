@@ -51,9 +51,9 @@ AFRAME.registerComponent("start-interact", {
         sceneEl.querySelector("#bg").object3D.visible = "true";  
         sceneEl.querySelector("#model").object3D.visible = "true";
         sceneEl.querySelector("#play").setAttribute("src", data.tracksound);
+        console.log(data.tracksound);
         sceneEl.querySelector("#play").setAttribute("autoplay", true);
 
-        console.log(data.tracksound);
       });
     }
   });
