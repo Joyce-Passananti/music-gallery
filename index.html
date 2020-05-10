@@ -11,7 +11,7 @@
   <body>
 
     <a-scene>
-      <a-sky src="assets/floor.jpg"></a-sky>
+      <a-sky src="assets/music_sky.jpg"></a-sky>
       <a-sky src="images/purp.jpg" opacity="0.3"></a-sky>
         
       <a-assets>
@@ -19,6 +19,7 @@
         <a-asset-item id="road-gltf" src="models/synth_road/synth_road.gltf"></a-asset-item>
       </a-assets>
 
+      
       <a-camera id="view" position="0 0.3 0"></a-camera>
 
       <a-entity
@@ -35,6 +36,18 @@
       <audio controls autoplay>
         <source src="music/synth_wave.mp3" type="audio/mpeg">
       </audio>
+
+      <a-plane id="start" color="#212121" height="0.35" position="0 3 -2" 
+        animation="property: material.opacity; from: 0; to: 100; dur: 200"
+        start-interact=""
+        >
+        <!-- sound="on: mouseenter; src: #hover-sound" -->
+        <a-entity id="startButtonLabel" mixin="font"
+          text="value: START; color: white; align: center; width: 1; wrapCount: 12; opacity: 0"
+          position="0 0 0.01"
+          animation="property: components.text.material.uniforms.opacity.value; from: 0; to: 1; dur: 500; delay: 100"
+        ></a-entity>
+      </a-plane>
 
     </a-scene>
 
