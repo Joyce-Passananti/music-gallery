@@ -13,22 +13,21 @@
 
     <a-scene>
       <a-sky src="assets/music_sky.jpg"></a-sky>
-      <!-- <a-sky src="images/purp.jpg" opacity="0.3"></a-sky> -->
         
       <a-assets>
-        <img id="sun" src="images/sun.png">
-        <a-asset-item id="road-gltf" src="models/synth_road/model.gltf"></a-asset-item>
+        <img id="background" src="assets/elvis.jpeg">
+        <a-asset-item id="road-gltf" src="models/model.gltf"></a-asset-item>
         <audio
           id="hover-sound"
           src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"
         ></audio>
         <audio
           id="elvis-sound"
-          src="assets/elvis_sample0.wav"
+          src="music/elvis_sample0.wav"
         ></audio>
         <audio
           id="sinatra-sound"
-          src="assets/sinatra_sample2.wav"
+          src="music/sinatra_sample2.wav"
         ></audio>
 
         <img src="assets/bruno_cartoon.jpeg" id="bruno">
@@ -52,12 +51,12 @@
         dur: 10000;
         easing: linear;
         loop: true;">
-        <a-entity id="road" gltf-model="#road-gltf" scale="50 50 50" position="-15 -100 0" rotation="0 90 0"></a-entity>
-        <a-entity id="road" gltf-model="#road-gltf" scale="50 50 50" position="-15 -100 -50" rotation="0 90 0"></a-entity>
-        <a-entity id="road" gltf-model="#road-gltf" scale="50 50 50" position="-15 -100 -100" rotation="0 90 0"></a-entity>
+        <a-entity id="road" gltf-model="#road-gltf" scale="50 50 50" position="-20 -90 0" rotation="0 90 0"></a-entity>
+        <a-entity id="road" gltf-model="#road-gltf" scale="50 50 50" position="-20 -90 -50" rotation="0 90 0"></a-entity>
+        <a-entity id="road" gltf-model="#road-gltf" scale="50 50 50" position="-20 -90 -100" rotation="0 90 0"></a-entity>
       </a-entity>
 
-      <a-image id="bg" src="#sun" width="3" height="3" position="0 10 -30" scale="5 5 1" visible=false ></a-image>
+      <a-image id="bg" src="#background" width="3" height="3" position="0 10 -30" scale="5 5 1" visible=false ></a-image>
 
       <a-sound id="play" src="#hover-sound"></a-sound>
 
@@ -131,7 +130,7 @@
         </a-plane>
       </a-plane>
 
-      <a-camera position="0 3 1.5" look-controls cursor="rayOrigin: mouse"></a-camera>
+      <a-camera position="0 5 1.5" look-controls cursor="rayOrigin: mouse"></a-camera>
     
 
     </a-scene>
