@@ -34,9 +34,7 @@
         <img src="assets/mayer3.jpg" id="mayer3">
       </a-assets>
 
-      
-      <!-- <a-camera id="view" position="0 0.3 -1"></a-camera> -->
-
+    
       <a-entity id="model" visible=false
         animation="property: position;
         to: 0 0 20;
@@ -48,7 +46,7 @@
         <a-entity id="road" gltf-model="#road-gltf" scale="0.7 0.7 0.7" position="0 0 -30"></a-entity>
       </a-entity>
 
-      <a-image id="bg" src="#sun" width="3" height="3" position="0 10 -30" scale="15 15 1" visible=false ></a-image>
+      <a-image id="bg" src="#sun" width="3" height="3" position="0 10 -30" scale="10 10 1" visible=false ></a-image>
       
       <!-- <audio controls autoplay>
         <source src="music/synth_wave.mp3" type="audio/mpeg">
@@ -56,7 +54,8 @@
 
       <a-plane id="start" color="black" height="0.35" position="0 3 -2" 
         animation="property: material.opacity; from: 0; to: 100; dur: 200"
-        start-interact=""
+        start-interact="" 
+        sound="src: music/synth_wave.mp3; on: click"
         >
         <!-- sound="on: mouseenter; src: #hover-sound" -->
         <a-entity id="startButtonLabel" mixin="font"
@@ -104,7 +103,7 @@
         </a-plane>
       </a-plane>
 
-      <a-plane id="menu1" color="blue" width="4" height="2.3"
+      <a-plane id="menu1" color="blue" width="2" height="2.3"
       visible=false position="4 3 -2" rotation="0 -30 0" sound="">
         <a-plane id="container" color="blue" width="3.9" height="2.2"
         position="0 0 0.01" rotation="0 0 0" sound="">
@@ -114,7 +113,7 @@
         </a-plane>
       </a-plane>
 
-      <a-plane id="menu2" color="blue" width="4" height="2.3"
+      <a-plane id="menu2" color="blue" width="2" height="2.3"
       visible=false position="-4 3 -2" rotation="0 30 0" sound="">
         <a-plane id="container1" color="blue" width="3.9" height="2.2"
         position="0 0 0.01" rotation="0 0 0" sound="">
@@ -124,7 +123,7 @@
         </a-plane>
       </a-plane>
 
-      <a-camera position="0 3 1" look-controls cursor="rayOrigin: mouse"></a-camera>
+      <a-camera position="0 3 1.5" look-controls cursor="rayOrigin: mouse"></a-camera>
     
 
     </a-scene>

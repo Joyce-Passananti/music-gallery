@@ -9,7 +9,7 @@ AFRAME.registerComponent("start-interact", {
       });
   
       entityEl.addEventListener("mouseleave", function () {
-        entityEl.setAttribute("color", "#212121");
+        entityEl.setAttribute("color", "black");
       });
   
       entityEl.addEventListener("click", function () {
