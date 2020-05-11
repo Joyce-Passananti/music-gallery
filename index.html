@@ -67,7 +67,7 @@
       </a-assets>
     
       <!-- background artist picture -->
-      <a-image id="bg" src="#background" width="3" height="3" position="0 10 -30" scale="5 5 1" visible=false ></a-image>
+      <a-image id="bg" src="#background" width="4" height="4" position="0 10 -30" scale="6 6 1" visible=false ></a-image>
 
       <!-- moving artist picture animations -->
       <a-image id="p1" src="#pic1" width="3" height="3" scale="2 2 1" visible=false 
@@ -124,16 +124,16 @@
         dur: 5000;
         easing: linear;
         loop: true;">
-        <a-entity id="road" gltf-model="#road-gltf" scale="50 50 50" position="-20 -100 0" rotation="0 90 0"></a-entity>
-        <a-entity id="road" gltf-model="#road-gltf" scale="50 50 50" position="-20 -100 -50" rotation="0 90 0"></a-entity>
-        <a-entity id="road" gltf-model="#road-gltf" scale="50 50 50" position="-20 -100 -100" rotation="0 90 0"></a-entity>
+        <a-entity id="road" gltf-model="#road-gltf" scale="40 40 40" position="-20 -100 0" rotation="0 90 0"></a-entity>
+        <a-entity id="road" gltf-model="#road-gltf" scale="40 40 40" position="-20 -100 -50" rotation="0 90 0"></a-entity>
+        <a-entity id="road" gltf-model="#road-gltf" scale="40 40 40" position="-20 -100 -100" rotation="0 90 0"></a-entity>
       </a-entity>
 
       <!-- music to play on selection -->
       <a-sound id="play" src="#hover-sound"></a-sound>
 
       <!-- start button -->
-      <a-plane id="start" color="black" height="0.65" position="0 3 -2" 
+      <a-plane id="start" color="black" height="0.35" position="0 3 -2" 
         animation="property: material.opacity; from: 0; to: 100; dur: 200"
         start-interact="" 
         sound="on: mouseenter; src: #hover-sound"
@@ -207,7 +207,7 @@
         </a-plane>
       </a-plane>
 
-      <a-camera position="0 5.5 3.5" look-controls cursor="rayOrigin: mouse"></a-camera>
+      <a-camera position="0 3.5 1.5" look-controls cursor="rayOrigin: mouse"></a-camera>
     
 
     </a-scene>
