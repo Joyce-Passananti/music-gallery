@@ -67,7 +67,7 @@
       </a-assets>
     
       <!-- background artist picture -->
-      <a-image id="bg" src="#background" width="3" height="3" position="0 8 -30" scale="5 5 1" visible=false ></a-image>
+      <a-image id="bg" src="#background" width="3" height="3" position="0 8 -35" scale="5 5 1" visible=false ></a-image>
 
       <!-- moving artist picture animations -->
       <a-image id="p1" src="#pic1" width="3" height="3" scale="2 2 1" visible=false 
@@ -145,7 +145,7 @@
         ></a-entity>
       </a-plane>
 
-      <a-plane id="menu0" color="white" width="4" height="2.3"
+      <a-plane id="menu0" color="white" width="4" height="3.8"
         visible=false position="0 3 -3" >
 
         <a-plane id="song0" color="teal" width="3.9" height="0.7" position="0 0.75 0.01" 
@@ -180,9 +180,31 @@
                   text="value: Bruno Mars; width: 3"></a-entity>
         
         </a-plane>
+
+        <a-plane id="song3" color="teal" width="3.9" height="0.7" position="0 -1.5 0.01" 
+        song-interact="track: #brunocover; track1: #bruno; track2: #bruno2; track3: #bruno3; track4: #bruno4; track5: #bruno5; tracksound: #elvis-sound" >
+          <a-image src="#brunocover" scale="0.6 0.6 0.6" position="-1.5 0 0.01"></a-image>
+        
+          <a-entity position= "1.5 0.1 0" 
+          text="value: Never Gonna Give You Up; width: 5"></a-entity>
+          <a-entity position= "0.52 -0.1 0"
+                  text="value: Bruno Mars; width: 3"></a-entity>
+        
+        </a-plane>
+
+        <a-plane id="song4" color="teal" width="3.9" height="0.7" position="0 -2.25 0.01" 
+        song-interact="track: #brunocover; track1: #bruno; track2: #bruno2; track3: #bruno3; track4: #bruno4; track5: #bruno5; tracksound: #elvis-sound" >
+          <a-image src="#brunocover" scale="0.6 0.6 0.6" position="-1.5 0 0.01"></a-image>
+        
+          <a-entity position= "1.5 0.1 0" 
+          text="value: Never Gonna Give You Up; width: 5"></a-entity>
+          <a-entity position= "0.52 -0.1 0"
+                  text="value: Bruno Mars; width: 3"></a-entity>
+        
+        </a-plane>
       </a-plane>
 
-      <a-plane id="menu1" color="white" width="4" height="2.3"
+      <a-plane id="menu1" color="white" width="4" height="3.8"
       visible=false position="4 3 -2" rotation="0 -30 0" sound="">
         <a-plane id="container" color="teal" width="3.9" height="2.2"
         position="0 0 0.01" rotation="0 0 0" sound=""
@@ -194,7 +216,7 @@
         </a-plane>
       </a-plane>
 
-      <a-plane id="menu2" color="white" width="4" height="2.3"
+      <a-plane id="menu2" color="white" width="4" height="3.8"
       visible=false position="-4 3 -2" rotation="0 30 0" sound="">
         <a-plane id="container1" color="teal" width="3.9" height="2.2"
         position="0 0 0.01" rotation="0 0 0" sound=""
@@ -207,7 +229,7 @@
         </a-plane>
       </a-plane>
 
-      <a-camera position="0 3.5 2.5" look-controls cursor="rayOrigin: mouse"></a-camera>
+      <a-camera position="0 3.5 3" look-controls cursor="rayOrigin: mouse"></a-camera>
     
 
     </a-scene>
