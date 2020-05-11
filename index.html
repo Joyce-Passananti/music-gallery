@@ -29,15 +29,23 @@
         ></audio>
         <audio
           id="elvis-sound"
-          src="music/elvis_sample0.wav"
+          src="music/elvis_audio.mp3"
         ></audio>
         <audio
           id="sinatra-sound"
-          src="music/sinatra_sample2.wav"
+          src="music/sinatra_audio.mp3"
         ></audio>
         <audio
           id="queen-sound"
-          src="music/queen_sample2.wav"
+          src="music/queen_audio.mp3"
+        ></audio>
+        <audio
+          id="zimmer-sound"
+          src="music/zimmer_audio.mp3"
+        ></audio>
+        <audio
+          id="bruno-sound"
+          src="music/bruno_audio.mp3"
         ></audio>
 
         <img src="assets/Bruno_cover.jpeg" id="brunocover">
@@ -51,8 +59,8 @@
         <img src="assets/elvis.jpeg" id="elvis">
         <img src="assets/elvis2.jpeg" id="elvis2">
         <img src="assets/elvis3.jpeg" id="elvis3">
-        <img src="assets/elvis4.jpeg" id="elvis4">
-        <img src="assets/elvis5.png" id="elvis5">
+        <img src="assets/elvis4.png" id="elvis4">
+        <img src="assets/elvis5.jpeg" id="elvis5">
 
         <img src="assets/sinatra_cover.jpeg" id="sinatracover">
         <img src="assets/sinatra.jpeg" id="sinatra">
@@ -61,14 +69,19 @@
         <img src="assets/sinatra4.jpeg" id="sinatra4">
         <img src="assets/sinatra5.jpeg" id="sinatra5">
         
-        <img src="assets/queen.jpg" id="queen">
-        <img src="assets/queen2.jpg" id="queen2">
-        <img src="assets/queen3.jpg" id="queen3">
+        <img src="assets/queen_cover.jpeg" id="queencover">        
+        <img src="assets/queen.jpeg" id="queen">
+        <img src="assets/queen2.jpeg" id="queen2">
+        <img src="assets/queen3.jpeg" id="queen3">
+        <img src="assets/queen4.jpeg" id="queen4">
+        <img src="assets/queen5.jpeg" id="queen5">        
 
-        <img src="assets/mayer.jpg" id="mayer">
-        <img src="assets/mayer2.jpg" id="mayer2">
-        <img src="assets/mayer3.jpg" id="mayer3">
-        <img src="assets/mayer4.png" id="mayer4">        
+        <img src="assets/zimmer_cover.jpeg" id="zimmercover">        
+        <img src="assets/zimmer.jpeg" id="zimmer">
+        <img src="assets/zimmer2.jpeg" id="zimmer2">
+        <img src="assets/zimmer3.jpeg" id="zimmer3">
+        <img src="assets/zimmer4.jpeg" id="zimmer4">        
+        <img src="assets/zimmer5.jpeg" id="zimmer5">                
       </a-assets>
     
       <!-- background artist picture -->
@@ -180,31 +193,31 @@
           <a-image src="#brunocover" scale="0.6 0.6 0.6" position="-1.5 0 0.01"></a-image>
         
           <a-entity position= "1.5 0.1 0" 
-          text="value: Bruno Mars Audio ; width: 5"></a-entity>
+          text="value: Never Gonna Give You Up; width: 5"></a-entity>
           <a-entity position= "0.52 -0.1 0"
-                  text="value: Bruno Mars [audio needed]; width: 3"></a-entity>
+                  text="value: Bruno Mars; width: 3"></a-entity>
         
         </a-plane>
 
         <a-plane id="song3" color="teal" width="3.9" height="0.7" position="0 -1.5 0.01" 
-        song-interact="track: #queen; track1: #queen2; track2: #queen2; track3: #queen3; track4: #queen3; track5: #queen3; tracksound: #queen-sound" >
-          <a-image src="#queen" scale="0.6 0.6 0.6" position="-1.5 0 0.01"></a-image>
+        song-interact="track: #queencover; track1: #queen; track2: #queen2; track3: #queen3; track4: #queen4; track5: #queen5; tracksound: #queen-sound" >
+          <a-image src="#queencover" scale="0.6 0.6 0.6" position="-1.5 0 0.01"></a-image>
         
           <a-entity position= "1.5 0.1 0" 
           text="value: Bohemian Rhapsody; width: 5"></a-entity>
           <a-entity position= "0.52 -0.1 0"
-                  text="value: Queen [imgs needed]; width: 3"></a-entity>
+                  text="value: Queen; width: 3"></a-entity>
         
         </a-plane>
 
         <a-plane id="song4" color="teal" width="3.9" height="0.7" position="0 1.5 0.01" 
-        song-interact="track: #mayer; track1: #mayer2; track2: #mayer2; track3: #mayer3; track4: #mayer3; track5: #mayer3; tracksound: #elvis-sound" >
-          <a-image src="#mayer" scale="0.6 0.6 0.6" position="-1.5 0 0.01"></a-image>
+        song-interact="track: #zimmercover; track1: #zimmer; track2: #zimmer2; track3: #zimmer3; track4: #zimmer4; track5: #zimmer5; tracksound: #zimmer-sound" >
+          <a-image src="#zimmercover" scale="0.6 0.6 0.6" position="-1.5 0 0.01"></a-image>
         
           <a-entity position= "1.5 0.1 0" 
-          text="value: John Mayor Audio; width: 5"></a-entity>
+          text="value: Film Score; width: 5"></a-entity>
           <a-entity position= "0.52 -0.1 0"
-                  text="value: John Mayer [audio, imgs needed]; width: 3"></a-entity>
+                  text="value: Hans Zimmer; width: 3"></a-entity>
         
         </a-plane>
       </a-plane>
