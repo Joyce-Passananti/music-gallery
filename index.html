@@ -13,7 +13,7 @@
 
     <a-scene>
       <a-sky src="assets/music_sky3.jpg"></a-sky>
-        
+
       <a-assets>
         <img id="background" src="assets/music_sky.jpg">
         <img id="pic1" src="assets/music_sky.jpg">
@@ -151,7 +151,7 @@
       <a-sound id="play" src="#hover-sound"></a-sound>
 
       <!-- start button -->
-      <a-plane id="start" color="black" height="0.35" position="0 3 -2" 
+      <!-- <a-plane id="start" color="black" height="0.35" position="0 3 -2" 
         animation="property: material.opacity; from: 0; to: 100; dur: 200"
         start-interact="" 
         sound="on: mouseenter; src: #hover-sound"
@@ -161,10 +161,10 @@
           position="0 0 0.01"
           animation="property: components.text.material.uniforms.opacity.value; from: 0; to: 1; dur: 500; delay: 100"
         ></a-entity>
-      </a-plane>
+      </a-plane> -->
 
       <a-plane id="menu0" color="white" width="4" height="3.8"
-        visible=false position="0 3 -3" >
+        visible=true position="0 3 -3" >
 
         <a-plane id="song0" color="teal" width="3.9" height="0.7" position="0 0.75 0.01" 
         song-interact="track: #elviscover; track1: #elvis; track2: #elvis2; track3: #elvis3; track4: #elvis4; track5: #elvis5; tracksound: #elvis-sound"  >
@@ -223,7 +223,7 @@
       </a-plane>
 
       <a-plane id="menu1" color="white" width="4" height="3.8"
-      visible=false position="4 3 -2" rotation="0 -30 0" sound="">
+      visible=true position="4 3 -2" rotation="0 -30 0" sound="">
         <a-plane id="container" color="teal" width="3.9" height="3.7"
         position="0 0 0.01" rotation="0 0 0" sound=""
         text="width: auto; height: auto; color: white; align: center; value: SKETCH 4
@@ -235,7 +235,7 @@
       </a-plane>
 
       <a-plane id="menu2" color="white" width="4" height="3.8"
-      visible=false position="-4 3 -2" rotation="0 30 0" sound="">
+      visible=true position="-4 3 -2" rotation="0 30 0" sound="">
         <a-plane id="container1" color="teal" width="3.9" height="3.7"
         position="0 0 0.01" rotation="0 0 0" sound=""
         text="width: auto; height: auto; color: white; align: center; value: Resources used:
