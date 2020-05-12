@@ -1,26 +1,26 @@
-AFRAME.registerComponent("start-interact", {
-    init: function () {
-      var data = this.data;
-      var sceneEl = document.querySelector("a-scene");
-      var entityEl = sceneEl.querySelector("#start");
+// AFRAME.registerComponent("start-interact", {
+//     init: function () {
+//       var data = this.data;
+//       var sceneEl = document.querySelector("a-scene");
+//       var entityEl = sceneEl.querySelector("#start");
   
-      entityEl.addEventListener("mouseenter", function () {
-        entityEl.setAttribute("color", "#636363");
-      });
+//       entityEl.addEventListener("mouseenter", function () {
+//         entityEl.setAttribute("color", "#636363");
+//       });
   
-      entityEl.addEventListener("mouseleave", function () {
-        entityEl.setAttribute("color", "black");
-      });
+//       entityEl.addEventListener("mouseleave", function () {
+//         entityEl.setAttribute("color", "black");
+//       });
   
-      entityEl.addEventListener("click", function () {
-        sceneEl.removeChild(entityEl);
-        startSketch = true;
-        sceneEl.querySelector("#menu0").object3D.visible = "true";
-        sceneEl.querySelector("#menu1").object3D.visible = "true";
-        sceneEl.querySelector("#menu2").object3D.visible = "true";
-      });
-    }
-  });
+//       entityEl.addEventListener("click", function () {
+//         sceneEl.removeChild(entityEl);
+//         startSketch = true;
+//         sceneEl.querySelector("#menu0").object3D.visible = "true";
+//         sceneEl.querySelector("#menu1").object3D.visible = "true";
+//         sceneEl.querySelector("#menu2").object3D.visible = "true";
+//       });
+//     }
+//   });
   
   AFRAME.registerComponent("song-interact", {
     init: function () {
@@ -29,7 +29,7 @@ AFRAME.registerComponent("start-interact", {
       console.log(songEl);
   
       songEl.addEventListener("mouseenter", function () {
-        songEl.setAttribute("color", "#636363");
+        songEl.setAttribute("color", "#5F9EA0");
       });
   
       songEl.addEventListener("mouseleave", function () {
